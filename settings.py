@@ -3,7 +3,7 @@
 # 默认url
 DEFAULT_URL = 'https://weibo.com/%s/like?from=page_100406_profile&wvr=6&mod=like'
 # 默认ID
-DEFAULT_ID = 5873553397
+DEFAULT_ID = 1811978342
 
 # 默认驱动路径
 CHROMEDRIVER_URL = '/usr/local/bin/chromedriver'
