@@ -1,0 +1,14 @@
+.DS_Store
+# **/*.pyc
+.pyenv
+.idea
+gitrm.README
+upload
+**/__pycache__/
+*.py[codi]
+*$py.class
+venv
+.pyenv
+.vscode
+
+local_settings.py
