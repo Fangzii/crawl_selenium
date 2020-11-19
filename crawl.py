@@ -85,15 +85,15 @@ class Crawl(object):
         if self.get():
             self.selenium_page()
 
-    def write_xlwt(self, sheet='测试表格'):
+    def write_xlwt(self, sheets='测试表格'):
         import xlwt
         workbook = xlwt.Workbook(encoding='utf-8')  # 新建工作簿
-        sheet = workbook.add_sheet(sheet)  # 新建sheet
+        sheet = workbook.add_sheet(sheets)  # 新建sheet
         for index, i in enumerate(self.all_data):
             sheet.write(index, 0, i['text'])  # 正文
             sheet.write(index, 1, i['info'])  # 用户名
             sheet.write(index, 2, i['form'])  # 时间以状态
             sheet.write(index, 3, i['page'])  # 大致页面
 
-        out_url = self.xlwt_url % sheet
+        out_url = self.xlwt_url % sheets
         workbook.save(r'%s' % out_url)  # 保存
