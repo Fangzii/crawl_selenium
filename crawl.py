@@ -67,7 +67,7 @@ class Crawl(object):
         page = self.driver.find_elements_by_class_name(self.option['page'])
         for i in page:
             if i.text == u'\u4e0b\u4e00\u9875':
-                print('---- 当前第%s页 ----' % self.page)
+                print('---- 当前第%s页 已经收集%s 条数据 ----' % (self.page + 1, len(self.all_data)))
                 print('---- 开始下一页 ----')
                 self.page += 1
                 i.click()

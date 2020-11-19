@@ -10,5 +10,5 @@ upload
 venv
 .pyenv
 .vscode
-
+*.xlsx
 local_settings.py
